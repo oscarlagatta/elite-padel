@@ -2,7 +2,9 @@
   "name": "@padel-hub-suite/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:elite": "nx serve elite-club-manager"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.0.0",
