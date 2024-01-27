@@ -6,6 +6,7 @@
     "start:elite": "nx serve elite-club-manager",
     "start:api": "nx serve elite-club-manager-api",
     "lint-staged": "lint-staged",
+    "affected:lint": "./node_modules/.bin/nx affected:lint --parallel",
     "prepare": "husky install"
   },
   "private": true,
