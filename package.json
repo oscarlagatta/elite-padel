@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start:elite": "nx serve elite-club-manager",
-    "start:api": "nx serve elite-club-manager-api"
+    "start:api": "nx serve elite-club-manager-api",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,8 @@
     "@angular/language-service": "~17.0.0",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
+    "@nrwl/eslint-plugin-nx": "^17.2.8",
+    "@nrwl/linter": "^17.2.8",
     "@nx/devkit": "17.2.8",
     "@nx/eslint": "17.2.8",
     "@nx/eslint-plugin": "17.2.8",
@@ -61,13 +64,15 @@
     "eslint": "~8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-playwright": "^0.15.3",
+    "husky": "^9.0.6",
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
     "jest-environment-node": "^29.4.1",
     "jest-preset-angular": "~13.1.4",
     "jsonc-eslint-parser": "^2.1.0",
+    "lint-staged": "^15.2.0",
     "nx": "17.2.8",
-    "prettier": "^2.6.2",
+    "prettier": "^2.8.8",
     "react-refresh": "^0.10.0",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
