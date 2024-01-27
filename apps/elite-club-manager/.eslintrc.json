@@ -30,9 +30,7 @@
     {
       "files": ["*.html"],
       "extends": ["plugin:@nx/angular-template"],
-      "rules": {
-        "no-console": ["error", { "allow": ["warn", "error"] }]
-      }
+      "rules": {}
     }
   ]
 }

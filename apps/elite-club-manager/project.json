@@ -10,9 +10,6 @@
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "commands": ["tsc -p tsconfig.app.json --noEmit"],
-        "cwd": "apps/elite-club-manager",
-        "forwardAllArgs": false,
         "outputPath": "dist/apps/elite-club-manager",
         "index": "apps/elite-club-manager/src/index.html",
         "browser": "apps/elite-club-manager/src/main.ts",
