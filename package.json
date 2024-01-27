@@ -5,6 +5,7 @@
   "scripts": {
     "start:elite": "nx serve elite-club-manager",
     "start:api": "nx serve elite-club-manager-api",
+    "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
   "private": true,
