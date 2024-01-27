@@ -1,0 +1,53 @@
+{
+  "name": "elite-club-manager-service-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/elite-club-manager-service-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/elite-club-manager-service-api",
+        "main": "apps/elite-club-manager-service-api/src/main.ts",
+        "tsConfig": "apps/elite-club-manager-service-api/tsconfig.app.json",
+        "assets": ["apps/elite-club-manager-service-api/src/assets"],
+        "webpackConfig": "apps/elite-club-manager-service-api/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "elite-club-manager-service-api:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "elite-club-manager-service-api:build:development"
+        },
+        "production": {
+          "buildTarget": "elite-club-manager-service-api:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/elite-club-manager-service-api/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}
